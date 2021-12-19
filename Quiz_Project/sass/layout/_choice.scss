@@ -1,0 +1,58 @@
+.choice {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 3rem;
+    padding-top: 3rem;
+    width: 88%;
+    margin: 0 auto;
+
+    @include respond (phone) {
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 6rem;
+    }
+
+    @include respond (smart-phn) {
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2.5rem 1.5rem;
+    }
+
+
+    &__icon-heart {
+        fill: $color-primary;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &__card {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 6px;
+        padding-bottom: 2rem;
+        border-radius: 0.5rem;
+
+        &-points {
+            display: grid;
+            grid-template-columns: 10% 90%;
+        }
+
+        &-text > p {
+            font-size: 1.6rem;
+            color: #101010;
+            font-family: "Poppins", sans-serif;
+            padding-top: 0.5rem;
+        }
+    }
+
+
+    &__card-heading {
+        text-align: center;
+
+        & > img {
+            width: 5.5rem;
+            box-shadow: rgba(16, 16, 16, 0.16) 0px 0px 6px;
+            border-radius: 50%;
+            padding: 6px;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.download {
+    height: 40.8rem;
+    margin-top: 8rem;
+    background-image: linear-gradient(#1010107c, #1010107c), url(../../img/download-screen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    &__section {
+        width: 88%;
+        margin: 0 auto;
+        padding-top: 4rem;
+
+
+        &-logo {
+            height: 7rem;
+            width: 7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 0.6rem;
+
+            & > img {
+                height: 6rem;
+            }
+        }
+
+
+
+        &-text > h2 {
+            margin-top: 40px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        &-text > p {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            font-weight: normal;
+            color: #fff;
+        }
+
+
+
+
+        &-img {
+            width: 35%;
+            padding-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+
+            @include respond (tab-land) {
+                width: 38%;
+            }
+
+            @include respond (tab-port) {
+                width: 43%;
+            }
+
+            @include respond (phone) {
+                width: 65%;
+            }
+
+            @include respond (smart-phn) {
+                margin: 0 auto;
+                width: 88%;
+            }
+
+
+            &-1, &-2 {
+                height: 4.3rem;
+
+                @include respond (tab-land) {
+                    height: 4rem;
+                }
+            }
+        }
+    }
+
+}
